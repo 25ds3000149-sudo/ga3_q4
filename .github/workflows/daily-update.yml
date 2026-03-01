@@ -3,6 +3,7 @@ name: Daily Update by 25ds3000149@ds.study.iitm.ac.in
 on:
   schedule:
     - cron: '30 15 * * *'  # Runs daily at 3:30 PM UTC (pick any specific time, not "*"; use crontab.guru to check)
+  workflow_dispatch:  # ADD THIS LINE - enables manual run button
 
 jobs:
   update:
